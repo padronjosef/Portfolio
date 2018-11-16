@@ -8,11 +8,11 @@
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Great+Vibes|Source+Sans+Pro" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css"/>
 
-        <meta name="viewport"content="widht=device-widht,initial-scale=1" />
+        <meta name="viewport"content="widht = device-widht, initial-scale=1" />
     </head>
 
     <body>
-
+        <i class="icon-menu burger-button" id="burger-menu"></i>
         <header class="header">
 
             <div class="container">
@@ -95,6 +95,7 @@
                     </div>
                     
                     <figure class="project-imageContainer">
+  <!--                       <iframe src="https://padronjosef.github.io/invie-github-page/" width="500" height="300" frameborder="0"></iframe> -->
                         <img class="project-image" width="500" src="images/invie.png" alt="invie">
                     </figure>
                  </article>
@@ -103,7 +104,7 @@
         </section>
 
         <div class="container">
-            <h2 class="event-title">Mas Sobre Mi Experiencia</h2>
+            <h2 class="event-title" id="event-list-title">Mas Sobre Mi Experiencia</h2>
         </div>
 
         <section id="eventos" class="event-list">
@@ -146,9 +147,15 @@
                             </div>
                     </article>
 
-                    <article class="event">
+                    <article class="event"> 
                             <figure class="event-imageContainer">
-                                <img class="event.image" src="images/experience.jpg" width="500" height="300" alt="experience">
+
+                                <div class="flexible-video">
+                                    <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/n8X9_MgEdCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+<!--                        <video class="html-video" src="videos/prueba.mp4" width="500" height="300" controls></video> -->
+<!--                        <img class="event.image" src="images/experience.jpg" width="500" height="300" alt="experience"> -->
                             </figure>
                             <div class="event-detail">
                                 <h3 class="event-title">experience bogota 2018</h3>
@@ -163,15 +170,15 @@
 
         <section id="contacto" class="contact">
             <form action="suscripcion/" class="form-email">
-                <h3>¿Creamos algo juntos?</h3>
+                <h3>Enviame un correo</h3>
                 <input type="text" placeholder="Déjame tu email" id="email">
                 <button>Enviar</button>
             </form>
 
             <div class="social">
-                <a href="https://github.com/padronjosef" class="social-link github"></a>
-                <a href="http://facebook.com/padronjosef" class="social-link facebook"></a>
-                <a href="https://www.instagram.com/padronjosef/" class="social-link instagram"></a>
+                <a href="https://github.com/padronjosef" <i class="social-link icon-github"></i></a>
+                <a href="http://facebook.com/padronjosef" <i class="social-link icon-facebook"></i></a>
+                <a href="https://www.instagram.com/padronjosef/" <i class="social-link icon-instagram"></i></a>
             </div>
         </section>
 
@@ -183,6 +190,7 @@
                 Designed by <a href="https://github.com/padronjosef?tab=repositories">@josePadronF</a>
         </footer>
 
+        <script src="script.js"></script>
     </body>
 
 </html>
