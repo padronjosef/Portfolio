@@ -33,23 +33,44 @@
     content: "\e900";
 }
 
-.icon-github:before {
+.icon-instagram:before {
     content: "\e901";
 }
-.icon-facebook:before {
+
+.icon-brand:before {
+    content: "\e901";
+}
+
+.icon-social:before {
+    content: "\e901";
+}
+
+.icon-github:before {
     content: "\e902";
 }
-.icon-instagram:before {
+
+.icon-brand1:before {
+    content: "\e902";
+}
+
+.icon-octacat:before {
+    content: "\e902";
+} 
+
+.icon-social1:before {
+    content: "\e902";
+}
+
+.icon-facebook:before {
     content: "\e903";
 }
-.icon-brand:before {
+
+.icon-brand2:before {
     content: "\e903";
 }
-.icon-social:before {
+
+.icon-social2:before {
     content: "\e903";
-}
-.icon-menu:before {
-    content: "\e900";
 }
 
 
