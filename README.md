@@ -1,8 +1,8 @@
-# Portafolio
+## Portafolio
+###[Ver Ahora](https://padronjosef.github.io/portafolio-github/)
 
-[Ver Ahora](https://padronjosef.github.io/portafolio-github/)
-
-| Proyectos | Repositorio | Experiencias |
+| Proyectos | GitHub Page| |Experiencias |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------
-|[Guitarras Invie](https://padronjosef.github.io/invie-github-page/)|[Ver Ahora](https://github.com/padronjosef/invie-github-page)|Facebook Developers Circle|
-|[Andrea Cruz's Galery](https://github.com/padronjosef/andy-cruz)|[Ver Ahora](https://padronjosef.github.io/andy-cruz/)|Hacktoberfest
+|[Andrea Cruz's Galery](https://github.com/padronjosef/andy-cruz)|[Ver Ahora](https://padronjosef.github.io/andy-cruz/)	||Facebook Developers Circle|
+|[Guitarras Invie](https://padronjosef.github.io/invie-github-page/)|[Ver Ahora](https://github.com/padronjosef/invie-github-page)||  Hacktoberfest
+
