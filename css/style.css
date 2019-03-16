@@ -139,12 +139,20 @@ h2 {
     flex-wrap: wrap;
 }
 
-.project-course, .project-date, .project-url {
+.project-date, .project-url {
     margin: 10px 0;
 }
 
+.project-course {
+    color: #1B2127;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
 .project-description {
-    font-size: 20px;
+    font-size: 1.2em;
+    text-align: justify;
 }
 
 .project strong {
@@ -178,6 +186,12 @@ h2 {
 
 .project-imageContainer {
     width: 50%;
+}
+
+.project-url a {
+    font-family: "Fjalla one", sans-serif;
+    color: #026FFF;
+    text-decoration: none;
 }
 
 .header {
@@ -294,9 +308,9 @@ figure {
 
 .social-link {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 010px;
+    width: 38px;
+    height: 38px;
+    margin: 10px;
     text-align: center;
     font-size: 40px;
     color: white; 
@@ -327,7 +341,7 @@ figure {
     background-image: url("../images/facebook.svg");
 }
 
-.social-link.instagram {
+.social-link.alibre {
     background-image: url("../images/instagram.svg");
 } */
 
@@ -364,6 +378,7 @@ figure {
     justify-content: space-evenly;
     padding: 0 50px;
     flex-wrap: wrap;
+    
 }
 
 .footer img {
@@ -409,6 +424,38 @@ figure {
     padding-top: 41%;
     background: blue;
     position: relative;
+}
+
+@media screen and (min-width : 1024px) {
+    .project-description {
+        padding-right: 80px;
+    }
+
+    .icon-facebook:hover {
+        color: rgb(0, 29, 88);
+    }
+
+    .icon-instagram:hover {
+        background: radial-gradient(circle farthest-corner  at 35% 90%,   #fec564, transparent 30%), 
+                    radial-gradient(circle farthest-corner  at 0 140%,    #fec564, transparent 30%), 
+                    radial-gradient(ellipse farthest-corner at 0 -25%,    #5258cf, transparent 30%), 
+                    radial-gradient(ellipse farthest-corner at 20% -50%,  #5258cf, transparent 30%), 
+                    radial-gradient(ellipse farthest-corner at 100% 0,    #893dc2, transparent 30%),
+                    radial-gradient(ellipse farthest-corner at 60% -20%,  #893dc2, transparent 30%),
+                    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), 
+                    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+                    border-radius: 30%;
+                    width: 38px;
+                    height: 38px;
+    }
+
+    .icon-github:hover {
+        color: rgba(84, 26, 139, 0.7);
+    }
+
+    .icon-book:hover {
+        color: rgba(0, 0, 0, 0.7);
+    }
 }
 
 @media screen and (max-width: 1023px){
