@@ -404,6 +404,10 @@ figure {
     flex-wrap: inherit;
 }
 
+.footer div span a {
+    color: var(--light-blue-color);
+}
+
 /* .html-video {
     width: 100%;
     height: auto;

@@ -1,6 +1,9 @@
-.link:hover,
-.github:hover {
+.link:hover {
     color: var(--light-blue-color);
+}
+
+.footer div span a:hover {
+    color: var(--light-grey-color);
 }
 
 .event-url:hover,
@@ -16,7 +19,7 @@
 .event-url:active,
 .project-image:active,
 .link:active {
-    transform: scale(.8);
+    transform: scale(.9);
 }
 
 
