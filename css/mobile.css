@@ -46,13 +46,27 @@
 }
 
 @media screen and (max-width: 767px) {
+
+
     h2 {
         font-size: 1.2em;
         margin: .5em 0;
     }
 
     .burger-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, .8);
+        color: var(--white-color);
         display: block;
+        text-align: center;
+        z-index: 4;
+        position: fixed;
+        font-size: 24px;
+        top: 8px;
+        left: 8px;
+        line-height: 40px;
     }
 
     .header {
@@ -139,11 +153,12 @@
         height: 200px;
         object-fit: cover;
     }
+    
 }
 
 @media screen and (max-width: 480px){
     h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .project-details {
@@ -188,8 +203,8 @@
     }
 
     h1 {
-        font-size: 1.2em;
-        background: rgba(0,0,0,.5)
+        font-size: 1.8em;
+        background: rgba(0,0,0,.7)
     }
 
     .hero {
