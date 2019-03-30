@@ -1,0 +1,52 @@
+.link:hover,
+.github:hover {
+    color: var(--light-blue-color);
+}
+
+.event-url:hover,
+.project-url a:hover {
+    color: var(--dark-grey-color);
+}
+
+.form-email button:hover {
+    transform: scale(.95);
+}
+
+.form-email button:active,
+.event-url:active,
+.project-image:active,
+.link:active {
+    transform: scale(.8);
+}
+
+
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+}
+@keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fadeInDown {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translate3d(0, -100%, 0) }
+    to { opacity: 1; transform: translate3d(0, 0, 0) }
+}
+
+.fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translate3d(0, 100%, 0) }
+    to { opacity: 1; transform: translate3d(0, 0, 0) }
+}

@@ -1,0 +1,198 @@
+@media screen and (min-width : 1024px) {
+    .project-description {
+        padding-right: 80px;
+    }
+
+    .icon-book:hover,
+    .icon-github:hover,
+    .icon-instagram:hover, 
+    .icon-facebook:hover {
+        color: var(--bg-grey-color);
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .container {
+        padding: 0 1em;
+    }
+
+    .flexible-video {
+        padding-top: 49%;
+    }
+
+    h1 {
+        font-size: 2em;
+        z-index: 2;
+        background: rgba(0,0,0,.5)
+    }
+    
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding:  2em;
+    }
+
+    .hero-image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
+
+    .burger-button {
+        display: block;
+    }
+
+    .header {
+        display: block;
+        height: auto;
+    }
+
+    .header ol {
+        display: block;
+    }
+
+    .header ol li {
+        height: 50px;
+    }
+
+    .header a {
+        justify-content: center;
+        height: 40px;
+        font-size: 2.5em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+
+    .header .logo {
+        text-align: center;
+    }
+
+    .menu {
+        position: fixed;
+        background-color: rgba(19, 26, 31, .95);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    .menu.is-active {
+        left: 0;
+    }
+
+    .project {
+        display: block;
+    }
+
+    .project-imageContainer {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .project-details {
+        width: auto;
+    }
+
+    .project-course, .project-date, .project-url {
+        margin:  0;
+    }
+
+    .project-course {
+        font-size: .7em;
+    }
+
+    .project-title,
+    .project-url,
+    .project-date,
+    .project-description {
+        font-size: 1em;
+    }
+
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .event img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 480px){
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .project-details {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .event-detail {
+        margin: -4.5em .5em .5em;
+        padding: 1em;
+    }
+
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form-email button{
+        margin: 1em auto;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+
+    .credits {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        background: rgba(0,0,0,.5)
+    }
+
+    .hero {
+        padding: 2em 1em;
+    }
+}

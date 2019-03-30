@@ -1,8 +1,3 @@
-/*  gris oscuro = #1d252c:
-    gris claro = #626262;
-    background gris = #1b2127; 
-    celeste =  #026fff;     */
-
 @font-face {
     font-family: 'icomoon';
     src:  url('../icomoon/fonts/icomoon.eot?q9vvmb');
@@ -13,7 +8,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
@@ -28,49 +22,46 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-book:before {
     content: "\e900";
 }
-
 .icon-instagram:before {
     content: "\e901";
 }
-
 .icon-brand:before {
     content: "\e901";
 }
-
 .icon-social:before {
     content: "\e901";
 }
-
 .icon-github:before {
     content: "\e902";
 }
-
 .icon-brand1:before {
     content: "\e902";
 }
-
 .icon-octacat:before {
     content: "\e902";
 } 
-
 .icon-social1:before {
     content: "\e902";
 }
-
 .icon-facebook:before {
     content: "\e903";
 }
-
 .icon-brand2:before {
     content: "\e903";
 }
-
 .icon-social2:before {
     content: "\e903";
+}
+
+:root {
+    --light-grey-color:  #626262;
+    --dark-grey-color: #1d252c;
+    --bg-grey-color: #1b2127;
+    --light-blue-color: #026fff;
+    --white-color: #FAFAFA;
 }
 
 body {
@@ -82,22 +73,24 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Fjalla one", sans-serif;
     font-weight: normal;
     letter-spacing: -.2px;
+    color: var(--bg-grey-color);
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 52px;
     line-height: 1.5;
     letter-spacing: -0.2px;
-    color: white;
+    color: var(--white-color);
     margin: 0;
 }
 
 h1 strong{
-    color: #056fff;
+    color: var(--light-blue-color);
 }
 
 h2 {
-    color: #026fff;
+    margin-top: 30px;
+    color: var(--light-blue-color);
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
@@ -105,9 +98,14 @@ h2 {
     margin-bottom: 20px;
 }
 
+.footer span,
+.link {
+    font-weight: bold;
+}
+
 .hero {
     height: 300px;
-    background-color: #1b2127;
+    background-color: var(--bg-grey-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -121,16 +119,16 @@ h2 {
 }
 
 .portfolio {
-    background: #FAFAFA;
+    background: var(--white-color);
     padding: 20px;
 }
 
 .project {
-    border: 1px solid gray;
+    box-shadow: 0 0 5px var(--light-grey-color);
     border-radius: 10px;
     margin-bottom: 15px;
     padding: 20px;
-    background: white;
+    background: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -139,10 +137,12 @@ h2 {
 
 .project-date, .project-url {
     margin: 10px 0;
+    font-size: 14px;
+    color: var(--light-grey-color);
 }
 
 .project-course {
-    color: #1B2127;
+    color: var(--bg-grey-color);
     font-size: 15px;
     margin-top: -10px;
     margin-bottom: 0px;
@@ -165,7 +165,7 @@ h2 {
 
 .project-image {
     width: 100%;
-    max-width: 500px;
+    box-shadow: 0 0 5px var(--light-grey-color);;
 }
 
 .project-details {
@@ -177,7 +177,7 @@ h2 {
     font-weight: normal;
     letter-spacing: -.2px;
     text-decoration: none;
-    color: #056FFF;
+    color: var(--light-blue-color);
     font-size: 1em;
     margin: 0;
 }
@@ -188,13 +188,13 @@ h2 {
 
 .project-url a {
     font-family: "Fjalla one", sans-serif;
-    color: #026FFF;
+    color: var(--light-blue-color);
     text-decoration: none;
 }
 
 .header {
-    background-color: #1b2127;
-    color: white;
+    background-color: var(--bg-grey-color);
+    color: var(--white-color);
     display: flex;
     height: 70px;
     align-items: center;
@@ -230,11 +230,16 @@ figure {
     display: flex;
     align-items: center;
     height: inherit;
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
     margin-bottom: 0;
     padding: 0 10px;
     font-size: 24px;
+}
+
+.header a, 
+.container {
+    user-select: none;
 }
 
 #event-list-title {
@@ -259,24 +264,27 @@ figure {
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 0 5px var(--light-grey-color);
 }
 
 .event img {
-    width: 480px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
+    box-shadow: 0 3px 3px var(--light-grey-color);
 }
 
 .event-detail {
     margin: 20px 40px;
     margin-top: -60px;
-    background-color: white;
+    background-color: var(--white-color);
     position: relative;
     padding: 20px;
     padding-top: 0;
     text-align: center;
     border: 1px solid transparent;
     border-radius: 20px;
+    border: 1px solid var(--light-grey-color);
 }
 
 .event-description {
@@ -289,13 +297,14 @@ figure {
     padding: 5px 20px;
     margin: 0 10px;
     text-decoration: none;
-    color: #056fff;
+    color: var(--light-blue-color);
     justify-content: space-evenly;
 }
 
 .contact {
-    background-color: #056fff;
-    color: white;
+    margin-top: 30px;
+    background-color: var(--light-blue-color);
+    color: var(--white-color);
     padding: 0 40px;
     height: 150px;
     display: flex;
@@ -311,7 +320,7 @@ figure {
     margin: 10px;
     text-align: center;
     font-size: 40px;
-    color: white; 
+    color: var(--white-color); 
     text-decoration: none;
 }
 
@@ -320,7 +329,7 @@ figure {
     height: 40px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, .8);
-    color: white;
+    color: var(--white-color);
     display: none;
     line-height: 40px;
     text-align: center;
@@ -331,20 +340,9 @@ figure {
     font-size: 20px;
 }
 
-/* .social-link.github {
-    background-image: url("../images/github.svg");
-}
-
-.social-link.facebook {
-    background-image: url("../images/facebook.svg");
-}
-
-.social-link.alibre {
-    background-image: url("../images/instagram.svg");
-} */
-
 .form-email input {
-    border: gray solid;
+    margin: 0;
+    border: var(--light-grey-color)	solid;
     border-radius: 5px;
     padding: 10px 20px 10px 25px;
     background-image: url("../images/envelope.svg");
@@ -353,30 +351,37 @@ figure {
     background-position: 5px center;
 }
 
+.form-email button a{
+    text-decoration: none;
+    color: var(--light-grey-color);
+    text-align: center;
+    padding: 5px 20px;
+    display: flex;
+}
+
 .form-email button {
-    display: block;
-    margin-top: 10px;
-    background: transparent;
-    color: white;
-    padding: 10px 0;
+    border: 2px solid var(--light-grey-color);
+    background-color: var(--white-color);
+    padding: 5px 0;
     border-radius: 5px;
-    width: 100px;
-    margin-top: 10px;
 }
 
 .form-email h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 5px;
+    margin-top: 0;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 .footer {
-    color: white;
-    background-color: #1b2127;
+    color: var(--white-color);
+    background-color: var(--dark-grey-color);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 0 50px;
     flex-wrap: wrap;
-    
 }
 
 .footer img {
@@ -384,7 +389,7 @@ figure {
 }
 
 .footer a {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -399,14 +404,12 @@ figure {
     flex-wrap: inherit;
 }
 
-.html-video {
+/* .html-video {
     width: 100%;
     height: auto;
+} */
 
- /*      max-width: 100%; */
-}
-
-.youtube-video {
+/* .youtube-video {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -414,249 +417,12 @@ figure {
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */
 
-.flexible-video {
+/* .flexible-video {
     width: 100%;
     height: 0;
     padding-top: 41%;
-    background: blue;
+    background: var(--light-blue-color);
     position: relative;
-}
-
-@media screen and (min-width : 1024px) {
-    .project-description {
-        padding-right: 80px;
-    }
-
-    .icon-facebook:hover {
-        color: rgb(0, 29, 88);
-    }
-
-    .icon-instagram:hover {
-        background: radial-gradient(circle farthest-corner  at 35% 90%,   #fec564, transparent 30%), 
-                    radial-gradient(circle farthest-corner  at 0 140%,    #fec564, transparent 30%), 
-                    radial-gradient(ellipse farthest-corner at 0 -25%,    #5258cf, transparent 30%), 
-                    radial-gradient(ellipse farthest-corner at 20% -50%,  #5258cf, transparent 30%), 
-                    radial-gradient(ellipse farthest-corner at 100% 0,    #893dc2, transparent 30%),
-                    radial-gradient(ellipse farthest-corner at 60% -20%,  #893dc2, transparent 30%),
-                    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), 
-                    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-                    border-radius: 30%;
-                    width: 38px;
-                    height: 38px;
-    }
-
-    .icon-github:hover {
-        color: rgba(84, 26, 139, 0.7    );
-    }
-
-    .icon-book:hover {
-        color: rgba(0, 0, 0, 0.7);
-    }
-}
-
-@media screen and (max-width: 1023px){
-
-    .container {
-        padding: 0 1em;
-    }
-
-    .flexible-video {
-        padding-top: 49%;
-    }
-
-    h1 {
-        font-size: 2em;
-        z-index: 2;
-        background: rgba(0,0,0,.5)
-    }
-    
-    .hero {
-        height: auto;
-        position: relative;
-        overflow: hidden;
-        padding:  2em;
-    }
-
-    .hero-image {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-        max-width: initial;
-        width: 100%;
-    }
-
-    .portfolio {
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 767px) {
-
-    h2 {
-        font-size: 1.2em;
-        margin: .5em 0;
-    }
-
-    .burger-button {
-        display: block;
-    }
-
-    .header {
-        display: block;
-        height: auto;
-    }
-
-    .header ol {
-        display: block;
-    }
-
-    .header ol li {
-        height: 50px;
-    }
-
-    .header a {
-        justify-content: center;
-        height: 40px;
-        font-size: 2.5em;
-        text-decoration: underline;
-        margin-bottom: .5em;
-    }
-
-    .header .logo {
-        text-align: center;
-    }
-
-    .menu {
-        position: fixed;
-        background-color: rgba(19, 26, 31, .95);
-        z-index: 3;
-        top: 0;
-        left: -100vw;
-        width: 100vw;
-/*         height: 100vh; */
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: .3s;
-    }
-
-    .menu.is-active {
-        left: 0;
-    }
-
-    .project {
-        display: block;
-    }
-
-    .project-imageContainer {
-        width: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    .project-details {
-        width: auto;
-    }
-
-    .project-course, .project-date, .project-url {
-        margin:  0;
-    }
-
-    .project-title {
-        font-size: 1em;
-    }
-
-    .project-url {
-        font-size: 1em;
-    }
-
-    .project-course {
-        font-size: .7em;
-    }
-
-    .project-date {
-        font-size: 1em;
-    }
-
-    .project-description {
-        font-size: 1em;
-    }
-
-    .event {
-        width: auto;
-        flex-shrink: initial;
-    }
-
-    .event img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width: 480px){
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    .project-details {
-        width: auto;
-        font-size: 14px;
-    }
-
-    .event-detail {
-        margin: -4.5em .5em .5em;
-        padding: 1em;
-    }
-
-    .contact {
-        height: auto;
-        padding: 1.5em 0;
-        text-align: center;
-        display: block;
-    }
-
-    .form-email button{
-        margin: 1em auto;
-    }
-
-    .form-email h3 {
-        margin-top: 0;
-    }
-
-    .footer {
-        display: block;
-        text-align: center;
-        border: 1px solid transparent;
-    }
-
-    .credits {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-}
-
-@media screen and (max-width: 320px){
-
-    h2 {
-        font-size: 1em;
-    }
-
-    h1 {
-        font-size: 1.2em;
-        background: rgba(0,0,0,.5)
-    }
-
-    .hero {
-        padding: 2em 1em;
-    }
-}
+} */
