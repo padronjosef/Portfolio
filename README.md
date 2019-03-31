@@ -1,8 +1,9 @@
 ## Portfolio
+#### [Live Demo](http://padronjose.com/)
 
-| Projects | GitHub Page | used technology
+| Projects | GitHub Page | technologies used
 |--|--|--
-|[Jose Padron's PortFolio](https://github.com/padronjosef/portafolio-github)|[Live Demo](https://padronjosef.github.io/portafolio-github/)|HTML5 , Post CSS , JS
-|[Andrea Cruz's Galery](https://github.com/padronjosef/andy-cruz)|[Live Demo](https://padronjosef.github.io/andy-cruz/)|HTML5 , CSS3 , JS
-|[Guitarras Invie](https://github.com/padronjosef/invie-github-page)|[Live Demo](https://padronjosef.github.io/invie-github-page/)|HTML5 , CSS3 , JS
+|[Digital Product](https://padronjosef.github.io/Digital-Product/)|[Live Demo](https://github.com/padronjosef/Digital-Product)|HTML5 , Post CSS , Paypal
+|[Andrea Cruz's Galery](https://github.com/padronjosef/andy-cruz)|[Live Demo](https://padronjosef.github.io/andy-cruz/)|HTML5 , POST CSS , JS
+|[Guitarras Invie](https://github.com/padronjosef/invie-github-page)|[Live Demo](https://padronjosef.github.io/invie-github-page/)|HTML5 , CSS3
 
