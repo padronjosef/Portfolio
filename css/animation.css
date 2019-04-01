@@ -1,55 +1,69 @@
 .link:hover {
-    color: var(--light-blue-color);
+  color: var(--light-blue-color);
 }
 
 .footer div span a:hover {
-    color: var(--light-grey-color);
+  color: var(--light-grey-color);
 }
 
 .event-url:hover,
 .project-url a:hover {
-    color: var(--dark-grey-color);
+  color: var(--dark-grey-color);
 }
 
 .form-email button:hover {
-    transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .form-email button:active,
 .event-url:active,
 .project-image:active,
 .link:active {
-    transform: scale(.9);
+  transform: scale(0.9);
 }
-
-
 
 .fadeIn {
     animation-name: fadeIn;
-    animation-duration: 7s;
-    animation-fill-mode: both;
+  animation-duration: 7s;
+  animation-fill-mode: both;
 }
-@keyframes fadeIn{
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fadeInDown {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
 }
 @keyframes fadeInDown {
-    from { opacity: 0; transform: translate3d(0, -100%, 0) }
-    to { opacity: 1; transform: translate3d(0, 0, 0) }
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .fadeInUp {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
 }
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translate3d(0, 100%, 0) }
-    to { opacity: 1; transform: translate3d(0, 0, 0) }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
