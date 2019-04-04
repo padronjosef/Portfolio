@@ -48,7 +48,7 @@ h2 {
 }
 
 .container {
-  max-width: 95vw;
+  max-width: 1024px;
   flex: 1;
   margin: 0 auto;
   display: inherit;
@@ -152,6 +152,7 @@ figure {
 .portfolio {
   background: var(--white-color);
   padding: 20px;
+  height: 100vh;
 }
 
 .project {
@@ -289,11 +290,10 @@ figure {
 
 /*--------------------------------CONTACTO--------------------------------*/
 .contact {
-  margin-top: 30px;
   background-color: var(--light-blue-color);
   color: var(--white-color);
   padding: 0 40px;
-  height: 150px;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -354,6 +354,7 @@ figure {
   justify-content: space-evenly;
   padding: 0 50px;
   flex-wrap: wrap;
+  height: 15vh;
 }
 
 .footer img {
