@@ -1,12 +1,13 @@
+.burger-button {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .project-description {
     padding-right: 80px;
   }
 
-  .icon-book:hover,
-  .icon-github:hover,
-  .icon-instagram:hover,
-  .icon-facebook:hover {
+  .icon-book:hover, .icon-github:hover, .icon-instagram:hover, .icon-facebook:hover {
     color: var(--bg-grey-color);
   }
 }
@@ -125,9 +126,7 @@
     width: auto;
   }
 
-  .project-course,
-  .project-date,
-  .project-url {
+  .project-course, .project-date, .project-url {
     margin: 0;
   }
 
@@ -135,10 +134,7 @@
     font-size: 0.7em;
   }
 
-  .project-title,
-  .project-url,
-  .project-date,
-  .project-description {
+  .project-title, .project-url, .project-date, .project-description {
     font-size: 1em;
   }
 

@@ -1,0 +1,79 @@
+/*¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\
+|*                      PORTFOLIO                    |
+\___________________________________________________*/
+
+.portfolio {
+  background: var(--white-color);
+  padding: 20px;
+}
+
+.project {
+  box-shadow: 0 0 5px var(--light-grey-color);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-date,
+.project-url {
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--light-grey-color);
+}
+
+.project-course {
+  color: var(--bg-grey-color);
+  font-size: 15px;
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+
+.project-description {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.project strong {
+  font-family: "Fjalla one", sans-serif;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-image {
+  width: 100%;
+  box-shadow: 0 0 5px var(--light-grey-color);
+}
+
+.project-details {
+  width: 49%;
+}
+
+.project-github,
+.project-web {
+  font-family: "Fjalla one", sans-serif;
+  font-weight: normal;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  color: var(--light-blue-color);
+  font-size: 1em;
+  margin: 0;
+}
+
+.project-imageContainer {
+  width: 50%;
+}
+
+.project-url a {
+  font-family: "Fjalla one", sans-serif;
+  color: var(--light-blue-color);
+  text-decoration: none;
+}

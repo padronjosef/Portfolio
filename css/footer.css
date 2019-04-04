@@ -1,0 +1,37 @@
+/*¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\
+|*                       FOOTER                      |
+\___________________________________________________*/
+.footer {
+  color: var(--white-color);
+  background-color: var(--dark-grey-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 50px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  vertical-align: middle;
+}
+
+.footer-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.footer-link-name {
+  color: var(--light-blue-color);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1024px;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}

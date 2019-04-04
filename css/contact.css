@@ -1,0 +1,60 @@
+/*¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\
+|*                      CONTACT                      |
+\___________________________________________________*/
+
+.contact {
+  margin-top: 30px;
+  background-color: var(--light-blue-color);
+  color: var(--white-color);
+  padding: 0 40px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  margin: 10px;
+  font-size: 40px;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.email-input {
+  margin: 0;
+  border: var(--light-grey-color) solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url("../images/envelope.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.email-link {
+  text-decoration: none;
+  color: var(--light-blue-color);
+  text-align: center;
+  padding: 5px 20px;
+  display: flex;
+}
+
+.email-btn {
+  border: 2px solid var(--light-blue-color);
+  background-color: var(--bg-grey-color);
+  padding: 5px 0;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.email-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 5px;
+  margin-top: 0;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
