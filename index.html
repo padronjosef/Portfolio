@@ -9,12 +9,14 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/animation.css">
         <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/aos.css">
         <meta name="viewport" content="widht = device-widht, initial-scale=1" />
         <meta name="description" content="Electronic Engineer, Front-End Developer."/>
     </head>
 
     <body>
-        <i class="icon-menu burger-button" id="burger-menu"></i>
+      <i class="icon-menu burger-button" id="burger-menu"></i>
+      <section class="fLook"> <!-- fLook start -->
         <header class="header">
 
             <div class="container">
@@ -41,23 +43,26 @@
 
         <section class="hero">
 
-            <div class="container fadeIn" >
-                <h1 class="portfolio-description">
+            <div fadeIn" >
+                <h1 class="hero-description">
                     Hello there! <strong>I'm Jose,</strong>
                     <br /> <strong> Electronic </strong> Engineer
                     <br /> Front End - <strong> Developer </strong>
                 </h1>
                 <div class="hero-image-container">
-                    <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
+                    <img class="hero-image" src="images/hero.jpg" alt="imagen principal del sitio">
                 </div>
             </div>
 
         </section>
+      </section><!-- fLook end -->
 
         <section id="portafolio" class="portfolio">
             <div class="container">
 
-                <h2 class="fadeInUp"> Portfolio (Featured projects) </h2>
+                <h2 data-aos="flip-up" data-aos-duration="700"> 
+                  Portfolio (Featured projects)
+                </h2>
 
 <!--                 <article class="project">
                     <div class="project-details">
@@ -75,7 +80,7 @@
                     </figure>
                 </article> -->
 
-                <article class="project fadeInUp">
+                <article class="project" data-aos="zoom-in" data-aos-duration="800">
                     <div class="project-details">
                         <h3 class="project-title">Invie Guitars</h3>
                         <h6 class="project-course">Invisible Guitars!</h6>
@@ -92,7 +97,7 @@
                     </figure>
                 </article>
 
-                <article class="project fadeInUp">
+                <article class="project" data-aos="zoom-in" data-aos-duration="800">
                     <div class="project-details">
                         <h3 class="project-title">Andy Cruz</h3>
                         <h6 class="project-course">Art Galery</h6>
@@ -113,13 +118,13 @@
         </section>
 
         <div class="container">
-            <h2 class="event-title" id="event-list-title">Active member of:</h2>
+            <h2 class="event-title" id="event-list-title" data-aos="flip-up" data-aos-duration="800"> Active member of: </h2>
         </div>
 
         <section id="eventos" class="event-list">
             <div class="container">
 
-                    <article class="event">
+                    <article class="event" data-aos="zoom-in-left" data-aos-duration="800">
                             <figure class="event-imageContainer">
                                 <a href="https://www.facebook.com/groups/devcbogota/">
                                     <img class="event.image" src="images/facebookDC.jpg" width="500" height="300" alt="imagen de la Facebook developer Circle">
@@ -134,7 +139,7 @@
                             </div>
                     </article>
 
-                    <article class="event">
+                    <article class="event" data-aos="zoom-in-right" data-aos-duration="800">
                             <figure class="event-imageContainer">
                                 <a href="https://www.meetup.com/Platzi-Colombia/events/253232467/">
                                     <img class="event.image" src="images/platzi.jpg" width="500" height="300" alt="experience">
@@ -149,7 +154,7 @@
                             </div>
                     </article>
 
-                    <article class="event">
+                    <article class="event" data-aos="zoom-in" data-aos-duration="800">
                             <figure class="event-imageContainer">
                                 <a href="https://hacktoberfest.digitalocean.com">
                                     <img class="event.image" src="images/hacktoberfest.png" width="500" height="300" alt="imagen de la hacktoberfest">
@@ -185,7 +190,7 @@
             </div>
         </section>
 
-        <section id="contacto" class="contact">
+        <section id="contacto" class="contact" data-aos="flip-right"  data-aos-duration="800">
             <form action="suscripcion/" class="form-email">
                 <h3>Send me a Email</h3>
                 <input type="text" placeholder="Leave me your email" id="email">
@@ -213,6 +218,10 @@
             </div>
         </footer>
         <script src="src/scripts/script.js"></script>
+        <script src="src/scripts/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 
 </html>
