@@ -1,21 +1,21 @@
 .link:hover {
-  color: var(--light-blue-color);
+  color: var(--primary-color);
 }
 
-.footer div span a:hover {
-  color: var(--light-grey-color);
+.footer-link-name:hover {
+  color: var(--grey-color);
 }
 
 .event-url:hover,
 .project-url a:hover {
-  color: var(--dark-grey-color);
+  color: var(--second-color);
 }
 
-.form-email button:hover {
+.email-btn:hover {
   transform: scale(0.95);
 }
 
-.form-email button:active,
+.email-btn:active,
 .event-url:active,
 .project-image:active,
 .link:active {

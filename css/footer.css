@@ -3,7 +3,7 @@
 \___________________________________________________*/
 .footer {
   color: var(--white-color);
-  background-color: var(--dark-grey-color);
+  background-color: var(--second-color);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -21,7 +21,7 @@
 }
 
 .footer-link-name {
-  color: var(--light-blue-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 

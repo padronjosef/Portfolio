@@ -8,7 +8,7 @@
   }
 
   .icon-book:hover, .icon-github:hover, .icon-instagram:hover, .icon-facebook:hover {
-    color: var(--bg-grey-color);
+    color: var(--second-color);
   }
 }
 
@@ -48,8 +48,9 @@
 
 @media screen and (max-width: 767px) {
   h2 {
-    font-size: 1.2em;
-    margin: 0.5em 0;
+    font-size: 1.8em;
+    margin: 1em 0;
+    text-align: center;
   }
 
   .burger-button {
@@ -130,12 +131,16 @@
     margin: 0;
   }
 
-  .project-course {
-    font-size: 0.7em;
+  .project-title{
+    font-size: 1.6em;
   }
 
-  .project-title, .project-url, .project-date, .project-description {
+  .project-course, .project-description {
     font-size: 1em;
+  }
+
+  .project-url {
+    font-size: .8em;
   }
 
   .event {
@@ -152,12 +157,11 @@
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 1.8em;
+    font-size: 2.8em;
   }
 
   .project-details {
     width: auto;
-    font-size: 14px;
   }
 
   .event-detail {
@@ -191,7 +195,7 @@
 
 @media screen and (max-width: 320px) {
   h2 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   h1 {
