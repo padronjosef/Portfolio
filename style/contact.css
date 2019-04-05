@@ -55,5 +55,5 @@
   font-size: 24px;
   margin: var(--space);
   margin-top: 0;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, system-ui;
 }

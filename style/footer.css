@@ -18,6 +18,7 @@
 .footer-link {
   color: var(--white-color);
   text-decoration: none;
+  cursor: default;
 }
 
 .footer-link-name {

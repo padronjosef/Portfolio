@@ -28,12 +28,12 @@
 }
 
 body {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, system-ui;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Fjalla one", sans-serif;
+  font-family: "Fjalla one", system-ui;
   font-weight: normal;
   letter-spacing: -0.2px;
   color: var(--second-color);
@@ -59,7 +59,7 @@ h2 {
   margin: calc(var(--space)*2) 0;
   color: var(--primary-color);
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", system-ui;
   font-weight: bold;
   font-size: 24px;
 }
