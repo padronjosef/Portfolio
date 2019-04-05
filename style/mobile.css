@@ -157,7 +157,7 @@
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 2.8em;
+    font-size: 2em;
   }
 
   .project-details {
@@ -185,6 +185,7 @@
     text-align: center;
     border: 1px solid transparent;
   }
+
 
   .credits {
     display: flex;
